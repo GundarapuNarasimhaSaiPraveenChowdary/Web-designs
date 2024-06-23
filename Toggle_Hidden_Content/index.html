@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Hidden Content</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="label" onclick="toggleContent('content1', this)">
+            Stream 1 <span class="symbol">+</span>
+        </div>
+        <div id="content1" class="content">This is the hidden content for Stream 1.</div>
+
+        <div class="label" onclick="toggleContent('content2', this)">
+            Stream 2 <span class="symbol">+</span>
+        </div>
+        <div id="content2" class="content">This is the hidden content for Stream 2.</div>
+
+        <div class="label" onclick="toggleContent('content3', this)">
+            Stream 3 <span class="symbol">+</span>
+        </div>
+        <div id="content3" class="content">This is the hidden content for Stream 3.</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
