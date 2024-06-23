@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Content Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="button-row">
+        <button onclick="showContent('content1')">Button 1</button>
+        <button onclick="showContent('content2')">Button 2</button>
+        <button onclick="showContent('content3')">Button 3</button>
+        <button onclick="showContent('content4')">Button 4</button>
+    </div>
+
+    <div class="content" id="content1">
+        <div class="leaders">
+            <div class="card">
+                <div class="card-content">
+                    <h3>Leader Name 1</h3>
+                    <p>This is the message from Leader 1. This content may be long and should scroll.</p>
+                </div>
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/100" alt="Leader 1">
+                </div>
+            </div>
+            <!-- Repeat for other leaders -->
+        </div>
+        <button onclick="showPopup()">Organisational Chart</button>
+    </div>
+    <div class="content" id="content2">
+        <p>This is the content for Button 2.</p>
+    </div>
+    <div class="content" id="content3">
+        <div class="main-content" id="mainContent3">
+            <div class="button-column">
+                <button onclick="showSubContent('subcontent1')">Carousel</button>
+                <button onclick="showSubContent('subcontent2')">Subcontent 2</button>
+                <button onclick="showSubContent('subcontent3')">Subcontent 3</button>
+                <button onclick="showSubContent('subcontent4')">Subcontent 4</button>
+            </div>
+            <div class="carousel-content sub-content active" id="subcontent1">
+                <div class="carousel">
+                    <img src="https://via.placeholder.com/400x200?text=Image+1" alt="Image 1">
+                    <img src="https://via.placeholder.com/400x200?text=Image+2" alt="Image 2">
+                    <img src="https://via.placeholder.com/400x200?text=Image+3" alt="Image 3">
+                </div>
+            </div>
+            <div class="sub-content" id="subcontent2">
+                <p>This is subcontent 2.</p>
+            </div>
+            <div class="sub-content" id="subcontent3">
+                <p>This is subcontent 3.</p>
+            </div>
+            <div class="sub-content" id="subcontent4">
+                <p>This is subcontent 4.</p>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="content4">
+        <p>This is the content for Button 4.</p>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="hidePopup()">&times;</span>
+            <div class="carousel">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuffer.com%2Flibrary%2Ffree-images%2F&psig=AOvVaw1V0jzqImmKQhsvBDNzbFty&ust=1719242683592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiVlp2E8oYDFQAAAAAdAAAAABAE" alt="Image 1">
+                <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fbuffer.com%2Flibrary%2Ffree-images%2F&psig=AOvVaw1V0jzqImmKQhsvBDNzbFty&ust=1719242683592000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiVlp2E8oYDFQAAAAAdAAAAABAE" alt="Image 2">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
